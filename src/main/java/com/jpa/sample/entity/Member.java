@@ -16,8 +16,11 @@ public class Member {
     // 테이블의 기본키 설정 전략을 자동으로 지정
     @Id // id 속성을 기본키로 지정
     @GeneratedValue(strategy = GenerationType.AUTO) // 보통 @Id에 붙으며, 기본키 생성 전략을 자동으로 생
+    @Column(name="member_id")
     private Long id;
-    
+    private String userId;
+
+    @Column(nullable = false)
     private String name;
     private String password;
 
