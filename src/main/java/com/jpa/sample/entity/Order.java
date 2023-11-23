@@ -34,6 +34,8 @@ public class Order {
     private LocalDateTime updateTime;
     
     // 1 : n 관계 : 하나의 order에 여러가지 orderItem이 포함될 수 있다.
-    @OneToMany(mappedBy = "order") // 연관 관계 소유자(=외래키를 관리하는 쪽)가 아님을 의미
+    // mappedBy : 연관 관계 소유자(=외래키를 관리하는 쪽)가 아님을 의미
+    // cascade : 영속성 전이
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
     private List<OrderItem> orderItemList = new ArrayList<>(); // 즉 orderItem쪽에서 외래키를 관리
 }
