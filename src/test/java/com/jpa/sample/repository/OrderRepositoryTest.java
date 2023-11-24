@@ -22,7 +22,7 @@ import javax.persistence.PersistenceContext;
 @SpringBootTest
 @Transactional
 @TestPropertySource(locations = "classpath:application-test.properties")
-@Commit // 트랙잭션 자동 롤백 취소
+//@Commit // 트랙잭션 자동 롤백 취소
 class OrderRepositoryTest {
     private static final Logger log = LoggerFactory.getLogger(OrderRepositoryTest.class);
 

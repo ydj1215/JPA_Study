@@ -562,3 +562,574 @@ Identify and stop the process that's listening on port 8111 or configure this ap
 17:44:14.685 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: memberListUsingGET_1
 17:44:14.689 [restartedMain] INFO  com.jpa.sample.SampleApplication - Started SampleApplication in 0.47 seconds (JVM running for 22011.943)
 17:44:14.689 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+16:49:39.967 [restartedMain] INFO  com.jpa.sample.SampleApplication - Starting SampleApplication using Java 11.0.15 on DESKTOP-MSV89TH with PID 7820 (D:\dev\backend\sample\build\classes\java\main started by user1 in D:\dev\backend\sample)
+16:49:39.969 [restartedMain] INFO  com.jpa.sample.SampleApplication - No active profile set, falling back to 1 default profile: "default"
+16:49:39.999 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:49:39.999 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:49:40.480 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:49:40.527 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 39 ms. Found 5 JPA repository interfaces.
+16:49:40.989 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8111 (http)
+16:49:40.997 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8111"]
+16:49:40.999 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:49:40.999 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+16:49:41.055 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:49:41.055 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1056 ms
+16:49:41.192 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16:49:41.245 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+16:49:41.367 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:49:41.433 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:49:41.644 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:49:41.659 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+16:49:42.508 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:49:42.515 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:49:42.930 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:49:43.043 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+16:49:43.047 [restartedMain] INFO  c.j.s.config.SwaggerConfiguration - 스웨거 api() 함수 호출 !!
+16:49:43.051 [restartedMain] INFO  c.j.s.config.SwaggerConfiguration - 스웨거 apiInfo() 함수 호출 !!
+16:49:43.133 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+16:49:43.437 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8111"]
+16:49:43.443 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8111 is already in use
+16:49:43.445 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16:49:43.451 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16:49:43.458 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16:49:43.459 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8111"]
+16:49:43.460 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+16:49:43.465 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8111"]
+16:49:43.466 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8111"]
+16:49:43.471 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:49:43.487 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8111 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8111 or configure this application to listen on another port.
+
+16:51:59.530 [restartedMain] INFO  com.jpa.sample.SampleApplication - Starting SampleApplication using Java 11.0.15 on DESKTOP-MSV89TH with PID 19124 (D:\dev\backend\sample\build\classes\java\main started by user1 in D:\dev\backend\sample)
+16:51:59.532 [restartedMain] INFO  com.jpa.sample.SampleApplication - No active profile set, falling back to 1 default profile: "default"
+16:51:59.562 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:51:59.562 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:52:00.085 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:52:00.138 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44 ms. Found 5 JPA repository interfaces.
+16:52:00.696 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8111 (http)
+16:52:00.703 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8111"]
+16:52:00.705 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:52:00.705 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+16:52:00.761 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:52:00.761 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1198 ms
+16:52:00.910 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16:52:00.945 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+16:52:01.056 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:52:01.118 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:52:01.343 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:52:01.354 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+16:52:02.012 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:52:02.018 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:52:02.367 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:52:02.477 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+16:52:02.480 [restartedMain] INFO  c.j.s.config.SwaggerConfiguration - 스웨거 api() 함수 호출 !!
+16:52:02.483 [restartedMain] INFO  c.j.s.config.SwaggerConfiguration - 스웨거 apiInfo() 함수 호출 !!
+16:52:02.565 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+16:52:02.810 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8111"]
+16:52:02.814 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8111 is already in use
+16:52:02.817 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16:52:02.819 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16:52:02.827 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16:52:02.828 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8111"]
+16:52:02.828 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+16:52:02.832 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8111"]
+16:52:02.833 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8111"]
+16:52:02.837 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:52:02.851 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8111 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8111 or configure this application to listen on another port.
+
+16:54:01.296 [restartedMain] INFO  com.jpa.sample.SampleApplication - Starting SampleApplication using Java 11.0.15 on DESKTOP-MSV89TH with PID 7372 (D:\dev\backend\sample\build\classes\java\main started by user1 in D:\dev\backend\sample)
+16:54:01.298 [restartedMain] INFO  com.jpa.sample.SampleApplication - No active profile set, falling back to 1 default profile: "default"
+16:54:01.333 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:54:01.333 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:54:01.838 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:54:01.883 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 5 JPA repository interfaces.
+16:54:02.314 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8111 (http)
+16:54:02.320 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8111"]
+16:54:02.322 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:54:02.322 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.82]
+16:54:02.378 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:54:02.378 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1044 ms
+16:54:02.515 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16:54:02.550 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+16:54:02.657 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:54:02.714 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:54:02.910 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:54:02.921 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+16:54:03.580 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:54:03.586 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:54:03.938 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:54:04.037 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+16:54:04.040 [restartedMain] INFO  c.j.s.config.SwaggerConfiguration - 스웨거 api() 함수 호출 !!
+16:54:04.043 [restartedMain] INFO  c.j.s.config.SwaggerConfiguration - 스웨거 apiInfo() 함수 호출 !!
+16:54:04.113 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:54:04.354 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8111"]
+16:54:04.369 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8111 (http) with context path ''
+16:54:04.370 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:54:04.387 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:54:04.405 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:54:04.475 [restartedMain] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: memberListUsingGET_1
+16:54:04.504 [restartedMain] INFO  com.jpa.sample.SampleApplication - Started SampleApplication in 3.479 seconds (JVM running for 3.848)
+16:54:19.284 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.jpa.sample.repository.OrderRepositoryTest], using SpringBootContextLoader
+16:54:19.290 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.jpa.sample.repository.OrderRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:54:19.291 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.jpa.sample.repository.OrderRepositoryTest]: OrderRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:54:19.379 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.jpa.sample.SampleApplication for test class com.jpa.sample.repository.OrderRepositoryTest
+16:54:19.431 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+16:54:19.441 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@34237b90, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@1d01dfa5, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4a31c2ee, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@d400943, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@22101c80, org.springframework.test.context.support.DirtiesContextTestExecutionListener@31ff1390, org.springframework.test.context.transaction.TransactionalTestExecutionListener@759d81f3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@781a9412, org.springframework.test.context.event.EventPublishingTestExecutionListener@5a4c638d, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@13e698c7, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@aed0151, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@267bbe1a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1f12e153, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@389562d6, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5a101b1c]
+16:54:19.632 [Test worker] INFO  c.j.s.repository.OrderRepositoryTest - Starting OrderRepositoryTest using Java 11.0.15 on DESKTOP-MSV89TH with PID 11820 (started by user1 in D:\dev\backend\sample)
+16:54:19.632 [Test worker] INFO  c.j.s.repository.OrderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+16:54:20.092 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:54:20.131 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 5 JPA repository interfaces.
+16:54:20.480 [Test worker] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16:54:20.514 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+16:54:20.619 [Test worker] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:54:20.688 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:54:20.954 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:54:20.967 [Test worker] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+16:54:21.716 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:54:21.724 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:54:22.188 [Test worker] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:54:22.392 [Test worker] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+16:54:22.396 [Test worker] INFO  c.j.s.config.SwaggerConfiguration - 스웨거 api() 함수 호출 !!
+16:54:22.401 [Test worker] INFO  c.j.s.config.SwaggerConfiguration - 스웨거 apiInfo() 함수 호출 !!
+16:54:22.936 [Test worker] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:54:22.949 [Test worker] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:54:22.966 [Test worker] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:54:23.030 [Test worker] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: memberListUsingGET_1
+16:54:23.054 [Test worker] INFO  c.j.s.repository.OrderRepositoryTest - Started OrderRepositoryTest in 3.591 seconds (JVM running for 4.393)
+16:54:23.203 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+16:54:23.204 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+16:54:23.205 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+16:54:23.205 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+16:54:23.206 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:23.206 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+16:54:23.207 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+16:54:23.207 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [1]
+16:54:23.216 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+16:54:23.216 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+16:54:23.216 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+16:54:23.216 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+16:54:23.217 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:23.217 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+16:54:23.217 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+16:54:23.217 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [2]
+16:54:23.222 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+16:54:23.222 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+16:54:23.222 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+16:54:23.222 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+16:54:23.222 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:23.222 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+16:54:23.223 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+16:54:23.223 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [3]
+16:54:23.244 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [null]
+16:54:23.244 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [null]
+16:54:23.244 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [null]
+16:54:23.245 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [null]
+16:54:23.245 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:23.245 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [BIGINT] - [4]
+16:54:23.246 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+16:54:23.246 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [1]
+16:54:23.246 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [4]
+16:54:23.246 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+16:54:23.246 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:23.247 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+16:54:23.247 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [5]
+16:54:23.248 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+16:54:23.249 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [2]
+16:54:23.249 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [4]
+16:54:23.249 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+16:54:23.249 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:23.249 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+16:54:23.249 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [6]
+16:54:23.250 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+16:54:23.250 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [3]
+16:54:23.250 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [4]
+16:54:23.250 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+16:54:23.250 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:23.250 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+16:54:23.251 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [7]
+16:54:23.265 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+16:54:23.269 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([member_i1_3_1_] : [BIGINT]) - [null]
+16:54:23.271 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([member_i6_5_0_] : [BIGINT]) - [null]
+16:54:23.272 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_da2_5_0_] : [TIMESTAMP]) - [null]
+16:54:23.272 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_st3_5_0_] : [VARCHAR]) - [null]
+16:54:23.272 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([reg_time4_5_0_] : [TIMESTAMP]) - [null]
+16:54:23.272 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([update_t5_5_0_] : [TIMESTAMP]) - [null]
+16:54:23.290 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+16:54:23.290 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+16:54:23.290 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+16:54:23.290 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+16:54:23.290 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:23.290 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+16:54:23.290 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+16:54:23.290 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [8]
+16:54:23.296 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+16:54:23.296 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+16:54:23.296 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+16:54:23.296 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+16:54:23.296 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:23.297 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+16:54:23.297 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+16:54:23.297 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [9]
+16:54:23.301 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+16:54:23.302 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+16:54:23.302 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+16:54:23.302 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+16:54:23.302 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:23.302 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+16:54:23.302 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+16:54:23.302 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [10]
+16:54:23.309 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [aaa0520@naver.com]
+16:54:23.310 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [유동재]
+16:54:23.310 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [null]
+16:54:23.310 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [2023-11-24T16:54:23.306541400]
+16:54:23.310 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [null]
+16:54:23.310 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [BIGINT] - [11]
+16:54:23.331 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [11]
+16:54:23.331 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [null]
+16:54:23.331 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [null]
+16:54:23.332 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [null]
+16:54:23.332 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:23.332 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [BIGINT] - [12]
+16:54:23.333 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+16:54:23.333 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [8]
+16:54:23.333 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [12]
+16:54:23.333 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+16:54:23.333 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:23.333 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+16:54:23.333 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [13]
+16:54:23.334 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+16:54:23.334 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [9]
+16:54:23.334 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [12]
+16:54:23.334 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+16:54:23.334 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:23.334 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+16:54:23.334 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [14]
+16:54:23.335 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+16:54:23.336 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [10]
+16:54:23.336 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [12]
+16:54:23.336 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+16:54:23.336 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:23.336 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+16:54:23.336 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [15]
+16:54:23.353 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+16:54:23.353 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+16:54:23.354 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+16:54:23.354 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+16:54:23.354 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:23.354 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+16:54:23.354 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+16:54:23.354 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [16]
+16:54:23.362 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+16:54:23.363 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+16:54:23.363 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+16:54:23.363 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+16:54:23.363 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:23.363 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+16:54:23.363 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+16:54:23.363 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [17]
+16:54:23.371 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+16:54:23.372 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+16:54:23.372 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+16:54:23.372 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+16:54:23.372 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:23.372 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+16:54:23.372 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+16:54:23.372 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [18]
+16:54:23.382 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [aaa0520@naver.com]
+16:54:23.382 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [유동재]
+16:54:23.382 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [null]
+16:54:23.382 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [2023-11-24T16:54:23.377544400]
+16:54:23.383 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [null]
+16:54:23.383 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [BIGINT] - [19]
+16:54:23.393 [Test worker] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1062, SQLState: 23000
+16:54:23.394 [Test worker] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Duplicate entry 'aaa0520@naver.com' for key 'member.UK_mbmcqelty0fbrvxp1q58dn57t'
+16:54:23.395 [Test worker] INFO  o.h.e.j.b.internal.AbstractBatchImpl - HHH000010: On release of batch it still contained JDBC statements
+16:54:23.462 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16:54:23.466 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16:54:23.477 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+16:54:50.153 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.jpa.sample.repository.OrderRepositoryTest], using SpringBootContextLoader
+16:54:50.158 [Test worker] INFO  o.s.t.c.s.AbstractContextLoader - Could not detect default resource locations for test class [com.jpa.sample.repository.OrderRepositoryTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+16:54:50.159 [Test worker] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.jpa.sample.repository.OrderRepositoryTest]: OrderRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:54:50.230 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.jpa.sample.SampleApplication for test class com.jpa.sample.repository.OrderRepositoryTest
+16:54:50.284 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+16:54:50.293 [Test worker] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3a60c416, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@60f2e0bd, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@469d003c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6b410923, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@57bd2029, org.springframework.test.context.support.DirtiesContextTestExecutionListener@203dd56b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@e8fadb0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6d64b553, org.springframework.test.context.event.EventPublishingTestExecutionListener@53667cbe, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1d3e6d34, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6eafb10e, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@26a94fa5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@464a4442, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2873d672, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3bc735b3]
+16:54:50.484 [Test worker] INFO  c.j.s.repository.OrderRepositoryTest - Starting OrderRepositoryTest using Java 11.0.15 on DESKTOP-MSV89TH with PID 22452 (started by user1 in D:\dev\backend\sample)
+16:54:50.484 [Test worker] INFO  c.j.s.repository.OrderRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+16:54:50.995 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:54:51.039 [Test worker] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 38 ms. Found 5 JPA repository interfaces.
+16:54:51.387 [Test worker] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+16:54:51.420 [Test worker] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+16:54:51.529 [Test worker] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:54:51.595 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+16:54:51.847 [Test worker] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+16:54:51.858 [Test worker] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+16:54:52.504 [Test worker] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:54:52.511 [Test worker] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:54:52.951 [Test worker] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:54:53.148 [Test worker] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+16:54:53.151 [Test worker] INFO  c.j.s.config.SwaggerConfiguration - 스웨거 api() 함수 호출 !!
+16:54:53.155 [Test worker] INFO  c.j.s.config.SwaggerConfiguration - 스웨거 apiInfo() 함수 호출 !!
+16:54:53.684 [Test worker] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Context refreshed
+16:54:53.702 [Test worker] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+16:54:53.721 [Test worker] INFO  s.d.s.w.s.ApiListingReferenceScanner - Scanning for api listing references
+16:54:53.792 [Test worker] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - Generating unique operation named: memberListUsingGET_1
+16:54:53.823 [Test worker] INFO  c.j.s.repository.OrderRepositoryTest - Started OrderRepositoryTest in 3.51 seconds (JVM running for 4.336)
+16:54:53.856 [Test worker] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@616d9a6d testClass = OrderRepositoryTest, testInstance = com.jpa.sample.repository.OrderRepositoryTest@16263fb2, testMethod = cascadeTest@OrderRepositoryTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@52b4da7c testClass = OrderRepositoryTest, locations = '{}', classes = '{class com.jpa.sample.SampleApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{classpath:application-test.properties}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@2e5c7f0b, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@660e9100, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6db66836, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4eeea57d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@56102e1c, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@12299890], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@2297c8bf]; rollback [true]
+16:54:54.009 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+16:54:54.012 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+16:54:54.012 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+16:54:54.013 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+16:54:54.014 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.015 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+16:54:54.015 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+16:54:54.016 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [1]
+16:54:54.022 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+16:54:54.023 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+16:54:54.023 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+16:54:54.023 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+16:54:54.023 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.023 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+16:54:54.023 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+16:54:54.023 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [2]
+16:54:54.026 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+16:54:54.026 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+16:54:54.026 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+16:54:54.027 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+16:54:54.027 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.027 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+16:54:54.027 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+16:54:54.027 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [3]
+16:54:54.029 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [null]
+16:54:54.030 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [null]
+16:54:54.030 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [null]
+16:54:54.030 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [null]
+16:54:54.030 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.030 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [BIGINT] - [4]
+16:54:54.032 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+16:54:54.032 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [1]
+16:54:54.032 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [4]
+16:54:54.033 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+16:54:54.033 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.033 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+16:54:54.033 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [5]
+16:54:54.035 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+16:54:54.036 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [2]
+16:54:54.036 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [4]
+16:54:54.036 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+16:54:54.036 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.036 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+16:54:54.037 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [6]
+16:54:54.039 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+16:54:54.039 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [3]
+16:54:54.039 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [4]
+16:54:54.039 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+16:54:54.039 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.039 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+16:54:54.039 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [7]
+16:54:54.056 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+16:54:54.061 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([member_i1_3_1_] : [BIGINT]) - [null]
+16:54:54.065 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([member_i6_5_0_] : [BIGINT]) - [null]
+16:54:54.066 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_da2_5_0_] : [TIMESTAMP]) - [null]
+16:54:54.066 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_st3_5_0_] : [VARCHAR]) - [null]
+16:54:54.066 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([reg_time4_5_0_] : [TIMESTAMP]) - [null]
+16:54:54.066 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([update_t5_5_0_] : [TIMESTAMP]) - [null]
+16:54:54.072 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [4]
+16:54:54.074 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_it1_4_1_] : [BIGINT]) - [5]
+16:54:54.075 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([count2_4_1_] : [INTEGER]) - [10]
+16:54:54.075 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([item_id6_4_1_] : [BIGINT]) - [1]
+16:54:54.075 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_id7_4_1_] : [BIGINT]) - [4]
+16:54:54.075 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_pr3_4_1_] : [INTEGER]) - [1000]
+16:54:54.075 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([reg_time4_4_1_] : [TIMESTAMP]) - [null]
+16:54:54.075 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([update_t5_4_1_] : [TIMESTAMP]) - [null]
+16:54:54.076 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_id7_4_0_] : [BIGINT]) - [4]
+16:54:54.076 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_it1_4_0_] : [BIGINT]) - [5]
+16:54:54.076 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_it1_4_1_] : [BIGINT]) - [6]
+16:54:54.076 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([count2_4_1_] : [INTEGER]) - [10]
+16:54:54.077 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([item_id6_4_1_] : [BIGINT]) - [2]
+16:54:54.077 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_id7_4_1_] : [BIGINT]) - [4]
+16:54:54.077 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_pr3_4_1_] : [INTEGER]) - [1000]
+16:54:54.077 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([reg_time4_4_1_] : [TIMESTAMP]) - [null]
+16:54:54.077 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([update_t5_4_1_] : [TIMESTAMP]) - [null]
+16:54:54.077 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_id7_4_0_] : [BIGINT]) - [4]
+16:54:54.077 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_it1_4_0_] : [BIGINT]) - [6]
+16:54:54.077 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_it1_4_1_] : [BIGINT]) - [7]
+16:54:54.077 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([count2_4_1_] : [INTEGER]) - [10]
+16:54:54.078 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([item_id6_4_1_] : [BIGINT]) - [3]
+16:54:54.078 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_id7_4_1_] : [BIGINT]) - [4]
+16:54:54.078 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_pr3_4_1_] : [INTEGER]) - [1000]
+16:54:54.078 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([reg_time4_4_1_] : [TIMESTAMP]) - [null]
+16:54:54.078 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([update_t5_4_1_] : [TIMESTAMP]) - [null]
+16:54:54.078 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_id7_4_0_] : [BIGINT]) - [4]
+16:54:54.078 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_it1_4_0_] : [BIGINT]) - [7]
+16:54:54.085 [Test worker] WARN  c.j.s.repository.OrderRepositoryTest - logger: 3
+16:54:54.094 [Test worker] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test: [DefaultTestContext@616d9a6d testClass = OrderRepositoryTest, testInstance = com.jpa.sample.repository.OrderRepositoryTest@16263fb2, testMethod = cascadeTest@OrderRepositoryTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@52b4da7c testClass = OrderRepositoryTest, locations = '{}', classes = '{class com.jpa.sample.SampleApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{classpath:application-test.properties}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@2e5c7f0b, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@660e9100, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6db66836, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4eeea57d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@56102e1c, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@12299890], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+16:54:54.101 [Test worker] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@616d9a6d testClass = OrderRepositoryTest, testInstance = com.jpa.sample.repository.OrderRepositoryTest@16124894, testMethod = lazyLoadingTest@OrderRepositoryTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@52b4da7c testClass = OrderRepositoryTest, locations = '{}', classes = '{class com.jpa.sample.SampleApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{classpath:application-test.properties}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@2e5c7f0b, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@660e9100, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6db66836, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4eeea57d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@56102e1c, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@12299890], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@2297c8bf]; rollback [true]
+16:54:54.142 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+16:54:54.143 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+16:54:54.143 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+16:54:54.143 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+16:54:54.143 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.143 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+16:54:54.143 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+16:54:54.143 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [8]
+16:54:54.145 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+16:54:54.145 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+16:54:54.146 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+16:54:54.146 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+16:54:54.146 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.146 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+16:54:54.146 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+16:54:54.146 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [9]
+16:54:54.148 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+16:54:54.149 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+16:54:54.149 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+16:54:54.149 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+16:54:54.149 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.150 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+16:54:54.150 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+16:54:54.150 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [10]
+16:54:54.152 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [aaa0520@naver.com]
+16:54:54.152 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [유동재]
+16:54:54.152 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [null]
+16:54:54.152 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [2023-11-24T16:54:54.115219700]
+16:54:54.153 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [null]
+16:54:54.153 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [BIGINT] - [11]
+16:54:54.158 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [11]
+16:54:54.158 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [null]
+16:54:54.158 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [null]
+16:54:54.158 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [null]
+16:54:54.158 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.158 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [BIGINT] - [12]
+16:54:54.160 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+16:54:54.160 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [8]
+16:54:54.160 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [12]
+16:54:54.160 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+16:54:54.160 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.160 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+16:54:54.160 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [13]
+16:54:54.162 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+16:54:54.163 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [9]
+16:54:54.163 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [12]
+16:54:54.163 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+16:54:54.163 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.163 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+16:54:54.163 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [14]
+16:54:54.165 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+16:54:54.166 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [10]
+16:54:54.166 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [12]
+16:54:54.166 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+16:54:54.166 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.166 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+16:54:54.166 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [15]
+16:54:54.169 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [13]
+16:54:54.170 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([count2_4_0_] : [INTEGER]) - [10]
+16:54:54.170 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([item_id6_4_0_] : [BIGINT]) - [8]
+16:54:54.170 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_id7_4_0_] : [BIGINT]) - [12]
+16:54:54.170 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_pr3_4_0_] : [INTEGER]) - [1000]
+16:54:54.171 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([reg_time4_4_0_] : [TIMESTAMP]) - [null]
+16:54:54.171 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([update_t5_4_0_] : [TIMESTAMP]) - [null]
+16:54:54.172 [Test worker] WARN  c.j.s.repository.OrderRepositoryTest - 로거 : class com.jpa.sample.entity.Order$HibernateProxy$qm6mvTlr
+16:54:54.172 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [12]
+16:54:54.173 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([member_i1_3_1_] : [BIGINT]) - [11]
+16:54:54.174 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([member_i6_5_0_] : [BIGINT]) - [11]
+16:54:54.174 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_da2_5_0_] : [TIMESTAMP]) - [null]
+16:54:54.174 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([order_st3_5_0_] : [VARCHAR]) - [null]
+16:54:54.174 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([reg_time4_5_0_] : [TIMESTAMP]) - [null]
+16:54:54.174 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([update_t5_5_0_] : [TIMESTAMP]) - [null]
+16:54:54.174 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([email2_3_1_] : [VARCHAR]) - [aaa0520@naver.com]
+16:54:54.174 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([name3_3_1_] : [VARCHAR]) - [유동재]
+16:54:54.174 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([password4_3_1_] : [VARCHAR]) - [null]
+16:54:54.174 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([reg_date5_3_1_] : [TIMESTAMP]) - [2023-11-24T16:54:54.115220]
+16:54:54.175 [Test worker] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_id6_3_1_] : [VARCHAR]) - [null]
+16:54:54.175 [Test worker] WARN  c.j.s.repository.OrderRepositoryTest - 지연 로딩 시간 확인 : null
+16:54:54.178 [Test worker] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test: [DefaultTestContext@616d9a6d testClass = OrderRepositoryTest, testInstance = com.jpa.sample.repository.OrderRepositoryTest@16124894, testMethod = lazyLoadingTest@OrderRepositoryTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@52b4da7c testClass = OrderRepositoryTest, locations = '{}', classes = '{class com.jpa.sample.SampleApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{classpath:application-test.properties}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@2e5c7f0b, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@660e9100, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6db66836, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4eeea57d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@56102e1c, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@12299890], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+16:54:54.182 [Test worker] INFO  o.s.t.c.t.TransactionContext - Began transaction (1) for test context [DefaultTestContext@616d9a6d testClass = OrderRepositoryTest, testInstance = com.jpa.sample.repository.OrderRepositoryTest@389f4282, testMethod = orphanRemovalTest@OrderRepositoryTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@52b4da7c testClass = OrderRepositoryTest, locations = '{}', classes = '{class com.jpa.sample.SampleApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{classpath:application-test.properties}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@2e5c7f0b, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@660e9100, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6db66836, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4eeea57d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@56102e1c, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@12299890], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@2297c8bf]; rollback [true]
+16:54:54.208 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+16:54:54.208 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+16:54:54.208 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+16:54:54.208 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+16:54:54.208 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.208 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+16:54:54.208 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+16:54:54.208 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [16]
+16:54:54.209 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+16:54:54.210 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+16:54:54.210 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+16:54:54.210 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+16:54:54.210 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.210 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+16:54:54.210 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+16:54:54.210 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [17]
+16:54:54.211 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [CLOB] - [테스트 상품 상세 설명]
+16:54:54.211 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [테스트 상품]
+16:54:54.211 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [SELL]
+16:54:54.211 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [10000]
+16:54:54.211 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.211 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [INTEGER] - [100]
+16:54:54.211 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [TIMESTAMP] - [null]
+16:54:54.211 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [BIGINT] - [18]
+16:54:54.213 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [aaa0520@naver.com]
+16:54:54.213 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [VARCHAR] - [유동재]
+16:54:54.213 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [null]
+16:54:54.214 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [2023-11-24T16:54:54.194219200]
+16:54:54.214 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [null]
+16:54:54.214 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [BIGINT] - [19]
+16:54:54.215 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [19]
+16:54:54.215 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [null]
+16:54:54.215 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [null]
+16:54:54.224 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [TIMESTAMP] - [null]
+16:54:54.224 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.224 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [BIGINT] - [20]
+16:54:54.226 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+16:54:54.226 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [16]
+16:54:54.226 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [20]
+16:54:54.226 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+16:54:54.226 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.226 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+16:54:54.226 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [21]
+16:54:54.227 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+16:54:54.227 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [17]
+16:54:54.227 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [20]
+16:54:54.227 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+16:54:54.227 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.227 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+16:54:54.228 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [22]
+16:54:54.229 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [10]
+16:54:54.229 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [BIGINT] - [18]
+16:54:54.229 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [BIGINT] - [20]
+16:54:54.229 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [INTEGER] - [1000]
+16:54:54.229 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [TIMESTAMP] - [null]
+16:54:54.229 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [TIMESTAMP] - [null]
+16:54:54.229 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [BIGINT] - [23]
+16:54:54.230 [Test worker] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [BIGINT] - [21]
+16:54:54.237 [Test worker] INFO  o.s.t.c.t.TransactionContext - Rolled back transaction for test: [DefaultTestContext@616d9a6d testClass = OrderRepositoryTest, testInstance = com.jpa.sample.repository.OrderRepositoryTest@389f4282, testMethod = orphanRemovalTest@OrderRepositoryTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@52b4da7c testClass = OrderRepositoryTest, locations = '{}', classes = '{class com.jpa.sample.SampleApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{classpath:application-test.properties}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@2e5c7f0b, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@660e9100, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6db66836, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4eeea57d, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@56102e1c, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@12299890], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true, 'org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]
+16:54:54.246 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+16:54:54.248 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+16:54:54.254 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
